@@ -1,7 +1,49 @@
 #!/bin/bash
 
-web_frameworks=("default" "atreugo" "beego" "bone" "chi" "denco" "don" "echo"  "fasthttp" \
-"fasthttp-routing" "fasthttp/router" "fiber" "gear" "gearbox" "gin" "goframe" "goji" "gorestful" \
-"gorilla" "gorouter" "gorouterfasthttp" "go-ozzo" "goyave" "httprouter" "httptreemux" "httpz" \
-"indigo" "lars" "lion" "muxie" "negroni" "pat" "pulse" "pure" "r2router" "tango" "tiger" \
-"tinyrouter" "violetear" "vulcan" "webgo")
+web_frameworks=(
+"beego" \
+"go-craft-web" \
+"negroni" \
+"bxog" \
+"denco" \
+"fiber" \
+"gin" \
+"go-router" \
+"lion" \
+"tango" \
+"violetear" \
+"default" \
+"chi" \
+"echo" \
+"fasthttp-routing" \
+"gearbox" \
+"lars" \
+"goyave" \
+"don" \
+"fasthttp" \
+"fasthttp-router" \
+"golf" \
+"go-ozzo" \
+"pat" \
+"go-restful" \
+"gorilla" \
+"http-router" \
+"http-tree-mux" \
+"vulcan" \
+"atreugo" \
+"baa" \
+"bone" \
+"go-frame" \
+"go-router-fasthttp" \
+"pure" \
+"tiger" \
+"tiny-router" \
+"goji" \
+"indigo" \
+"muxie" \
+"pulse" \
+"webgo" \
+"gear" \
+"httpz" \
+"r2router" \
+)

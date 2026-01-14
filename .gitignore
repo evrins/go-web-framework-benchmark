@@ -32,3 +32,4 @@ go-web-framework-benchmark
 .idea
 
 *.log
+processtime.csv

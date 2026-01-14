@@ -16,8 +16,9 @@ fi
 
 test_web_framework()
 {
+  set -ex
   echo "testing web framework: $2"
-  ./$server_bin_name $2 $3 & sleep 2
+  ./$server_bin_name -w $2 -s $3 & sleep 2
 
   throughput=$(wrk -t$cpu_cores -c$4 -d30s http://127.0.0.1:8080/hello)
   echo "$throughput"

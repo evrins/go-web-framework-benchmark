@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"goyave.dev/goyave/v5"
+	"goyave.dev/goyave/v5/config"
 )
 
 // Goyave
@@ -28,9 +29,14 @@ func getGoyaveRoutes(server *goyave.Server, router *goyave.Router) {
 }
 
 func startGoyave(port int) {
-	opts := goyave.Options{}
-	opts.Config.Set("server.port", port)
-	opts.Config.Set("server.host", "0.0.0.0")
+	cfg := config.LoadDefault()
+
+	cfg.Set("server.port", port)
+	cfg.Set("server.host", "0.0.0.0")
+
+	opts := goyave.Options{
+		Config: cfg,
+	}
 
 	server, err := goyave.New(opts)
 	if err != nil {

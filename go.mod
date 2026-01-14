@@ -1,6 +1,6 @@
 module github.com/smallnest/go-web-framework-benchmark
 
-go 1.26
+go 1.25
 
 require (
 	github.com/abemedia/go-don v0.2.2

@@ -17,7 +17,7 @@ func main() {
 	var cpuBound bool
 	var sleepTime int
 
-	pflag.StringVarP(&webFramework, "webframework", "w", "web framework to test", "default")
+	pflag.StringVarP(&webFramework, "webframework", "w", "default", "web framework to test")
 	pflag.IntVarP(&port, "port", "p", 8080, "port to listen on")
 	pflag.IntVarP(&samplingPoint, "samplingPoint", "s", 20, "sampling point in seconds")
 	pflag.BoolVarP(&cpuBound, "cpuBound", "c", false, "use cpu bound")
